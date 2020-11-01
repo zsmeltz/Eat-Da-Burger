@@ -1,7 +1,11 @@
 li {
-  padding: 5px;
+  padding: 2px;
   margin: 5px;
-  background: #faebd7;
+  background: border-box;
+  border: solid brown;
+  font-weight: bold;
+  font-size: 17px;
+  color: black
 }
 
 .label {
@@ -14,23 +18,49 @@ li {
   background: aqua;
 }
 
-
-.uneaten{
-  text-align: left
+.uneaten-list{
+  float: left;
+  list-style-position: inside;
+  width: 20%;
+  position: relative
 }
-.eaten{
-  
-  text-align: right
 
+.eaten-list{
+  float: right;
+  list-style-position: inside;
+  width: 20%;
+  position: relative;
 }
+
 .create-form{
-  text-align: center;
+  width: 17%;
+  left: 40%;
+    top: 55%;
+    position: absolute;
+    text-align: center;
+    font-size: 22px;
+    border: solid saddlebrown;
+    background-color: navajowhite;
+    padding: 15px;
 }
 
 .form-group {
   margin-bottom: 5px;
+  position: relative;
 }
 
 h1{
   text-align: center;
+}
+
+body{
+  background-color: burlywood;
+}
+
+img{
+  width: 20%;
+  height: 20%;
+  margin: 5px;
+  left: 39%;
+  position: relative;
 }
