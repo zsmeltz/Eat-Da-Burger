@@ -52,7 +52,7 @@ var orm = {
   },
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
-2
+
     queryString += " (";
     queryString += cols.toString();
     queryString += ") ";

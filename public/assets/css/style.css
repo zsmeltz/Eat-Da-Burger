@@ -14,6 +14,23 @@ li {
   background: aqua;
 }
 
+
+.uneaten{
+  text-align: left
+}
+.eaten{
+  
+  text-align: right
+
+}
+.create-form{
+  text-align: center;
+}
+
 .form-group {
   margin-bottom: 5px;
+}
+
+h1{
+  text-align: center;
 }

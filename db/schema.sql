@@ -2,7 +2,7 @@
 
 CREATE DATABASE daBurger_db;
 USE daBurger_db;
-
+DROP TABLE burgers;
 CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
@@ -10,3 +10,5 @@ CREATE TABLE burgers
 	eaten BOOLEAN NOT NULL,
 	PRIMARY KEY (id)
 );
+commit;
+SELECT * FROM burgers;

@@ -9,7 +9,6 @@ var connection = mysql.createConnection({
   database: "daBurger_db"
 });
 
-
 // Make connection.
 connection.connect(function(err) {
   if (err) {
