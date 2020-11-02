@@ -2,6 +2,17 @@ var express = require("express");
 
 var PORT = process.env.PORT || 3030;
 
+if (process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+    database: 'daBurger_db'
+  });
+}
+
 var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -19,6 +30,7 @@ app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
 var routes = require("./controllers/burgersController.js");
+const connection = require("./config/connection.js");
 
 app.use(routes);
 
